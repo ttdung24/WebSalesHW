@@ -43,7 +43,7 @@ header .logo a {
     color: #3cb878;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 header .menu {
@@ -178,7 +178,7 @@ header .sidebar-top a:nth-child(3) span{
     color: #333;
     font-size: .9rem;
     max-width: 300px;
-    text-align: justify;
+    text-align: center;
 }
 
 .product-lists li:hover .buy {
@@ -246,6 +246,10 @@ header .sidebar-top a:nth-child(3) span{
     padding: 31px 0 10px 0;
 }
 
+#shipping ul li:nth-child(4) h2 {
+    padding-top: 17px;
+}
+
 /* Promotion */
 #promotion {
     background-color: #2e3348;
@@ -262,6 +266,10 @@ header .sidebar-top a:nth-child(3) span{
     padding: 100px 0px;
 }
 
+#promotion ul li img {
+    max-width: 428px;
+    width: 80%;
+}
 #promotion ul li:nth-child(2) {
     background-color: #34394f;
 }
@@ -358,25 +366,27 @@ header .sidebar-top a:nth-child(3) span{
 
 #brands .brands ul li a {
     display: block;
-    width: 100%;
-    height: 300px;
+    width: 140px;
+    height: 130px;
     background: url(../img/brand.png) no-repeat;
+    margin: 70px auto;
+    
 }
 
 #brands .brands ul li:nth-child(1) a {
-    background-position: 50px;
+    background-position: 4px;
 }
 
 #brands .brands ul li:nth-child(2) a {
-    background-position: -178px;
+    background-position: -226px;
 }
 
 #brands .brands ul li:nth-child(3) a {
-    background-position: -410px;
+    background-position: -456px;
 }
 
 #brands .brands ul li:nth-child(4) a {
-    background-position: -635px;
+    background-position: -688px;
 }
 
 /* Footer */
@@ -428,4 +438,163 @@ footer {
 
 .f-right ul li:nth-child(5) a {
     background-position: -237px;
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 996px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* Menu + Header */
+    header .logo {
+        width: 75%;
+    }
+    
+    header .logo a {
+        display: block;
+        text-indent: 20px;
+    }
+    
+    header .menu {
+        display: none;
+    }
+
+    header .sidebar-top {
+        width: 30%;
+        justify-content: flex-start;
+    }
+
+    /* Slider */
+    #slider, .slider-items {
+        height: auto;
+    }
+
+    .slider-items h2 {
+        font-size: 100%;
+        left: 15px;
+    }
+
+    /* Best Seller */
+    #best-seller {
+        margin-top: 20px;
+    }
+
+    .product-lists .introduce {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .product-lists .introduce p {
+        align-self: center;
+        max-width: 80%;
+    }
+
+    .product-lists {
+        justify-content: space-evenly;
+    }
+
+    .product-lists li {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    .product-lists li img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .product-lists .buy {
+        top: 0;
+        right: 0;
+    }
+
+    /* Shipping */
+    #shipping {
+        margin-top: 0px;
+        padding: 20px 0;
+    }
+
+    #shipping ul {
+        flex-wrap: wrap;
+    }
+
+    #shipping ul li {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    /* Promotion */
+    #promotion ul {
+        flex-direction: column;
+    }
+
+    #promotion ul li {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    /* Feature Product*/
+    #feature-product h2 {
+        margin-top: 50px;
+    }
+
+    #feature-product small {
+        margin-bottom: 30px;
+    }
+
+    #feature-product ul li {
+        margin-bottom: 25px;
+    }
+
+    /* Brands */
+    #brands {
+        flex-direction: column;
+    }
+
+    #brands > div {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    .discount input {
+        max-width: 300px;
+    }
+
+    .discount button {
+        min-width: 300px;
+        margin-top: 5px;
+        margin-left: -5px;
+    }
+
+    #brands .brands ul {
+        flex-wrap: wrap;
+    }
+
+    #brands .brands ul li {
+        width: 50%;
+    }
+
+    #brands .brands ul li a {
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+    }
+
+    .f-left, .f-right {
+        width: 100%;
+    }
+
+    .f-left {
+        min-height: 50px;
+        padding-top: 13px;
+    }
+    
+    .f-right {
+        margin: 15px 0;
+    }
 }
